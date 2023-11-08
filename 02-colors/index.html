@@ -36,8 +36,8 @@
     <input type="text" class="border border-green-500">
 
     <!-- Divide Colors -->
-    <div class="divide-y">
-      <div>Item 1</div>
+    <div class="divide-y divide-red-500">
+      <div>Each line has an automatic divide line!</div>
       <div>Item 2</div>
       <div>Item 3</div>
       <div>Item 4</div>
@@ -46,10 +46,25 @@
 
     <!-- Outline Colors -->
 
+    <button class="outline outline-red-500">Hello</button>
+    <button class="outline outline-blue-500">Hello</button>
+
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
 
+    <button class="shadow-lg bg-cyan-500 shadow-yellow-500">
+      Join Me in yellow shadow
+    </button>
+    <button class="shadow-lg bg-cyan-500 shadow-purple-500/50">
+      Purple but lower opacity
+    </button>
+
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-purple-500">
 
     <!-- Arbitrary Colors -->
+    <div class="bg-[#427fab]">Making a color with a hex code</div>
+    <div class="bg-[rgb(255,0,0)]">Making a color with rgb</div>
+    <div class="bg-[steelblue]">Making color with words</div>
+
   </body>
 </html>
