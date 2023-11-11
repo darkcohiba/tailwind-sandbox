@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* apply css that applies on the base of everything  */
+@layer base{
+    h1{
+        @apply text-yellow-400
+    }
+}
+
+/* create custom components */
+@layer components{
+    .btn-blue{
+        @apply bg-blue-600 py-2 px-4 rounded-xl font-bold text-white hover:bg-yellow-300 hover:text-black transition duration-1000
+    }
+}
+/* create custom classes and use @apply to apply tailwind */
+.content-area{
+    @apply bg-green-200;
+    height: theme('spacing.128')
+}
+/* using the tailwind screen sizes for media queries */
+@media screen(xl){
+    body{
+        @apply bg-black text-white
+    }
+}
